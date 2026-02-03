@@ -29,8 +29,6 @@ The simulations follow and extend the adaptive junction framework developed in p
 - Catalyst–electrolyte Butler–Volmer kinetics
 - Self-consistent determination of catalyst energetics under steady-state operation
 
-A more detailed model including surface-state charging can be found elsewhere, https://arxiv.org/pdf/1707.03112
-
 ---
 
 ## Repository Contents
@@ -75,6 +73,14 @@ Tested with:
 - Pandas
 
 All dependencies are available via standard Python scientific distributions.
+
+---
+
+## References:
+
+1	Mills, T. J., Lin, F. & Boettcher, S. W. Theory and simulations of electrocatalyst-coated semiconductor electrodes for solar water splitting. Phys Rev Lett 112, 148304, doi:10.1103/PhysRevLett.112.148304 (2014).
+2	Nellist, M. R., Laskowski, F. A. L., Lin, F., Mills, T. J. & Boettcher, S. W. Semiconductor–Electrocatalyst Interfaces: Theory, Experiment, and Applications in Photoelectrochemical Water Splitting. Acc. Chem. Res. 49, 733-740, doi:10.1021/acs.accounts.6b00001 (2016).
+3	Mills, T. J. et al. The role of surface states in electrocatalyst-modified semiconductor photoelectrodes: Theory and simulations. arXiv e-prints, arXiv:1707.03112, doi:10.48550/arXiv.1707.03112 (2017).
 
 ---
 
