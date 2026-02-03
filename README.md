@@ -88,8 +88,11 @@ The simulations run on a standard desktop or laptop CPU.
 2. Clone or download this repository.
 3. Install required packages:
 
-bash
+```bash
 pip install numpy scipy matplotlib pandas
+```
+
+Expected install time on a "normal" desktop computer is <1  min
 
 ---
 
@@ -124,7 +127,7 @@ Representative output includes smooth current–voltage curves consistent with t
 
 ### Expected runtime for demo
 
-On a normal desktop or laptop computer: < 10 seconds per script.
+On a normal desktop or laptop computer: < 30 seconds per script.
 
 ---
 
@@ -171,4 +174,8 @@ Each script is self-contained and may be executed directly:
 
 ```bash
 python Adaptive-Junction-Python-Script.py
+```
+or
+```bash
 python Buried-Junction-Python-Script.py
+```
