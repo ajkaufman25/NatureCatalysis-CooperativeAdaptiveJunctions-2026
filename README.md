@@ -65,16 +65,74 @@ This script represents a simplified junction treatment consistent with earlier a
 ## Dependencies
 
 Tested with:
-
+- OS Windows 11 Home
+  
 - Python **3.13.9**
-- NumPy
-- SciPy
-- Matplotlib
-- Pandas
+- NumPy **2.3.3**
+- SciPy **1.16.2**
+- Matplotlib **3.20.6**
+- Pandas **2.3.3**
 
+The code is OS-agnostic and should run on any system with a compatible Python installation.
 All dependencies are available via standard Python scientific distributions.
 
 ---
+### Non-standard hardware
+No non-standard hardware is required.  
+The simulations run on a standard desktop or laptop CPU.
+
+---
+
+### Installation instructions
+1. Ensure Python 3.13.9 (or compatible) is installed.
+2. Clone or download this repository.
+3. Install required packages:
+
+bash
+pip install numpy scipy matplotlib pandas
+
+---
+
+### Included demo data
+
+The simulations are fully self-contained and generate their own simulated datasets internally.
+No external input files are required.
+
+### Demo instructions
+
+Run either script directly:
+
+python Adaptive-Junction-Python-Script.py
+or
+python Buried-Junction-Python-Script.py
+
+---
+
+### Expected output
+
+Numerical solution of steady-state catalytic current density as a function of applied voltage
+
+A plotted current–voltage curve displayed on screen:
+
+Jcatsol vs V_app for the adaptive junction model
+
+J_cat vs V_app for the buried junction model
+
+Representative output includes smooth current–voltage curves consistent with those shown in the manuscript figures.
+
+---
+
+### Expected runtime for demo
+
+On a normal desktop or laptop computer: < 10 seconds per script.
+
+---
+
+### Reproducibility Notes
+
+All constants, parameters, and equations are explicitly defined in code.
+The simulations reproduce qualitative and quantitative trends reported in the manuscript.
+The code represents a physics-based model rather than a device-scale engineering simulator.
 
 ## References:
 
@@ -85,6 +143,29 @@ All dependencies are available via standard Python scientific distributions.
 ---
 
 ## Usage
+### Citation
+
+If you use this software, please cite:
+A. Kaufman, K. Wheeler, E. J. Crumlin, S. W. Boettcher,
+Cooperative Adaptive Junctions Govern Overall Photoelectrochemical Water Splitting,
+Nature Catalysis (2026).
+
+### Instructions for Use
+
+How to run the software on your own data
+The scripts are parameter-driven and may be adapted by modifying physical constants and material parameters defined at the top of each file, including:
+-Bandgap energy
+-Barrier heights
+-Exchange current densities
+-Carrier concentrations
+-Applied voltage range
+
+Users can:
+-Adjust material parameters directly in the script
+-Re-run the simulation
+-Generate updated current–voltage curves
+
+The code is intended for research and educational use, enabling exploration of adaptive junction behavior in semiconductor–catalyst photoelectrochemical systems.
 
 Each script is self-contained and may be executed directly:
 
